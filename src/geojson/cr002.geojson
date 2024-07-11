@@ -1,0 +1,78 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": 1,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-83.47533971699994, 8.6213263650000727],
+            [-83.475258398999983, 8.621380413000054],
+            [-83.475212513999963, 8.6214534930000468],
+            [-83.475259085999937, 8.6215525510000361],
+            [-83.47517008799997, 8.6216882790000682],
+            [-83.475143044999982, 8.6218061010000611],
+            [-83.475079794999942, 8.6218339260000221],
+            [-83.474989753999978, 8.6219509060000519],
+            [-83.474917858999959, 8.6220875730000444],
+            [-83.474891354999954, 8.6222050410000293],
+            [-83.475001142999986, 8.6222855800000389],
+            [-83.475248117999968, 8.6225822500000504],
+            [-83.475428972999964, 8.6224544780000656],
+            [-83.475940806999972, 8.6230304360000218],
+            [-83.476319303999958, 8.622566513000038],
+            [-83.476328031999969, 8.6225946100000215],
+            [-83.476346966999984, 8.6226300010000614],
+            [-83.476357262999954, 8.6227111110000578],
+            [-83.476383930999987, 8.6227468050000766],
+            [-83.476457173999961, 8.6227736300000402],
+            [-83.476493321999953, 8.6227728470000216],
+            [-83.476511163999987, 8.6227458540000725],
+            [-83.476502124999968, 8.6227188030000548],
+            [-83.476474834999976, 8.6227011950000474],
+            [-83.476456696999946, 8.6226740770000561],
+            [-83.476456345999964, 8.6226379870000756],
+            [-83.476482657999952, 8.6225836330000334],
+            [-83.476564549999978, 8.6225378360000491],
+            [-83.476564430999986, 8.6225197350000258],
+            [-83.476545989999977, 8.6224926450000225],
+            [-83.476526545999945, 8.6223303310000574],
+            [-83.47646270599995, 8.62225834700007],
+            [-83.476455112999986, 8.6221679540000764],
+            [-83.476508574999968, 8.6221096020000232],
+            [-83.476526156999967, 8.6220506650000743],
+            [-83.476530772999979, 8.6219944860000624],
+            [-83.476497067999958, 8.6219598760000622],
+            [-83.476658709999981, 8.6217506800000479],
+            [-83.476850049999939, 8.6216872940000258],
+            [-83.476938853999968, 8.6215608500000371],
+            [-83.476856950999945, 8.6213981410000429],
+            [-83.476547018999952, 8.6215396220000571],
+            [-83.475538083999936, 8.6223998390000247],
+            [-83.475245066999946, 8.6220591420000687],
+            [-83.475172505999979, 8.6221133480000276],
+            [-83.475181052999972, 8.6220132450000619],
+            [-83.475514769999961, 8.6215871420000667],
+            [-83.47533971699994, 8.6213263650000727]
+          ]
+        ]
+      },
+      "properties": {
+        "OBJECTID": 1,
+        "Name": "CR-002",
+        "FolderPath": "CR-002.kml/CR-002.kml",
+        "SymbolID": 0,
+        "AltMode": 0,
+        "Base": 0,
+        "Clamped": -1,
+        "Extruded": 0,
+        "Snippet": "",
+        "PopupInfo": "\u003chtml xmlns:fo=\"http://www.w3.org/1999/XSL/Format\" xmlns:msxsl=\"urn:schemas-microsoft-com:xslt\"\u003e\n\u003chead\u003e\n\u003cMETA http-equiv=\"Content-Type\" content=\"text/html\"\u003e\n\u003cmeta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\"\u003e\n\u003c/head\u003e\n\u003cbody style=\"margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;\"\u003e\n\u003ctable style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px\"\u003e\n\u003ctr style=\"text-align:center;font-weight:bold;background:#9CBCE2\"\u003e\n\u003ctd\u003eCR-002\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e\n\u003ctable style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px\"\u003e\n\u003ctr\u003e\n\u003ctd\u003eOID\u003c/td\u003e\n\u003ctd\u003e1\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr bgcolor=\"#D4E4F3\"\u003e\n\u003ctd\u003eName\u003c/td\u003e\n\u003ctd\u003eCR-002\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eFolderPath\u003c/td\u003e\n\u003ctd\u003eCR-002.kml\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr bgcolor=\"#D4E4F3\"\u003e\n\u003ctd\u003eSymbolID\u003c/td\u003e\n\u003ctd\u003e0\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eAltMode\u003c/td\u003e\n\u003ctd\u003e0\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr bgcolor=\"#D4E4F3\"\u003e\n\u003ctd\u003eBase\u003c/td\u003e\n\u003ctd\u003e0\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eClamped\u003c/td\u003e\n\u003ctd\u003e-1\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr bgcolor=\"#D4E4F3\"\u003e\n\u003ctd\u003eExtruded\u003c/td\u003e\n\u003ctd\u003e0\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eSnippet\u003c/td\u003e\n\u003ctd\u003e\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr bgcolor=\"#D4E4F3\"\u003e\n\u003ctd\u003ePopupInfo\u003c/td\u003e\n\u003ctd\u003e\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/table\u003e\n\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/table\u003e\n\u003c/body\u003e\u003cscript type=\"text/javascript\"\u003e\nfunction changeImage(attElement, nameElement) {\ndocument.getElementById('imageAttachment').src = attElement;\ndocument.getElementById('imageName').innerHTML = nameElement;}\n\u003c/script\u003e\u003c/html\u003e\n",
+        "Shape_Length": 0.0084188311116555198,
+        "Shape_Area": 1.2407642654178266e-6
+      }
+    }
+  ]
+}

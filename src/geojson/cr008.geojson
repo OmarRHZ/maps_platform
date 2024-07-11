@@ -1,0 +1,74 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": 1,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-83.435189040999944, 8.5642496290000736],
+            [-83.434890253999981, 8.5638935680000259],
+            [-83.434660418999954, 8.5642685680000454],
+            [-83.434537838999972, 8.5644503870000221],
+            [-83.434327155999938, 8.5646625080000263],
+            [-83.434166270999981, 8.564772357000038],
+            [-83.43403219999999, 8.5649162960000353],
+            [-83.433890467999959, 8.5650867510000239],
+            [-83.433672122999951, 8.5650791750000508],
+            [-83.433442286999934, 8.5650526610000384],
+            [-83.433231603999957, 8.5650564480000639],
+            [-83.432986445999973, 8.5649882660000571],
+            [-83.432672335999939, 8.5648594780000735],
+            [-83.432503789999942, 8.5647534170000768],
+            [-83.432434839999985, 8.5646738720000712],
+            [-83.432312259999946, 8.5646700840000562],
+            [-83.432231817999934, 8.5647382670000525],
+            [-83.432189679999965, 8.5648594780000735],
+            [-83.432189679999965, 8.5649579630000403],
+            [-83.43227778499994, 8.565048872000034],
+            [-83.43232758299996, 8.5651322060000439],
+            [-83.432400363999989, 8.5652117510000494],
+            [-83.432369718999951, 8.5652609940000275],
+            [-83.432254800999942, 8.5653178120000462],
+            [-83.432147543999974, 8.5653367510000749],
+            [-83.432155205999948, 8.5654087210000398],
+            [-83.432385041999964, 8.5654428120000716],
+            [-83.432614876999935, 8.5654617510000435],
+            [-83.432906002999971, 8.5654996300000334],
+            [-83.433043904999977, 8.5655034180000484],
+            [-83.43336184399999, 8.5654541750000703],
+            [-83.433449948999964, 8.5654806910000616],
+            [-83.433744904999969, 8.5654806910000616],
+            [-83.433905789999983, 8.5655185690000621],
+            [-83.43402453899995, 8.5655337210000653],
+            [-83.434208407999961, 8.5654882660000453],
+            [-83.434422920999964, 8.5652534170000649],
+            [-83.434679571999936, 8.5649693270000284],
+            [-83.434725537999952, 8.5648064480000698],
+            [-83.434752352999965, 8.5646776600000294],
+            [-83.43479831999997, 8.5645299320000277],
+            [-83.434878761999983, 8.5644617510000671],
+            [-83.435028155999987, 8.5643519020000554],
+            [-83.435189040999944, 8.5642496290000736]
+          ]
+        ]
+      },
+      "properties": {
+        "OBJECTID": 1,
+        "Name": "CR-008",
+        "FolderPath": "CR-008/CR-008",
+        "SymbolID": 0,
+        "AltMode": 0,
+        "Base": 0,
+        "Clamped": -1,
+        "Extruded": 0,
+        "Snippet": "",
+        "PopupInfo": "\u003chtml xmlns:fo=\"http://www.w3.org/1999/XSL/Format\" xmlns:msxsl=\"urn:schemas-microsoft-com:xslt\"\u003e\n\u003chead\u003e\n\u003cMETA http-equiv=\"Content-Type\" content=\"text/html\"\u003e\n\u003cmeta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\"\u003e\n\u003c/head\u003e\n\u003cbody style=\"margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;\"\u003e\n\u003ctable style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px\"\u003e\n\u003ctr style=\"text-align:center;font-weight:bold;background:#9CBCE2\"\u003e\n\u003ctd\u003e\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e\n\u003ctable style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px\"\u003e\n\u003ctr\u003e\n\u003ctd\u003eName\u003c/td\u003e\n\u003ctd\u003e&lt;Null&gt;\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr bgcolor=\"#D4E4F3\"\u003e\n\u003ctd\u003eText\u003c/td\u003e\n\u003ctd\u003e&lt;Null&gt;\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eInteger Value\u003c/td\u003e\n\u003ctd\u003e&lt;Null&gt;\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr bgcolor=\"#D4E4F3\"\u003e\n\u003ctd\u003eDouble Value\u003c/td\u003e\n\u003ctd\u003e&lt;Null&gt;\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eDate Time\u003c/td\u003e\n\u003ctd\u003e&lt;Null&gt;\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/table\u003e\n\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/table\u003e\n\u003c/body\u003e\u003cscript type=\"text/javascript\"\u003e\nfunction changeImage(attElement, nameElement) {\ndocument.getElementById('imageAttachment').src = attElement;\ndocument.getElementById('imageName').innerHTML = nameElement;}\n\u003c/script\u003e\u003c/html\u003e\n",
+        "Shape_Length": 0.0084644340595919684,
+        "Shape_Area": 1.588880282212571e-6
+      }
+    }
+  ]
+}

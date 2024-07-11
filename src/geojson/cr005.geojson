@@ -1,0 +1,35 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": 1,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-83.280745999999965, 8.4393160000000762],
+            [-83.280870999999991, 8.4393250000000535],
+            [-83.281487999999968, 8.4391500000000406],
+            [-83.281356999999957, 8.4389400000000592],
+            [-83.280745999999965, 8.4393160000000762]
+          ]
+        ]
+      },
+      "properties": {
+        "OBJECTID": 1,
+        "Name": "CR-005",
+        "FolderPath": "Land Plot Extent (2000 m²)/Land Plot Extent (2000 m²)",
+        "SymbolID": 0,
+        "AltMode": 0,
+        "Base": 0,
+        "Clamped": -1,
+        "Extruded": 0,
+        "Snippet": "",
+        "PopupInfo": "\u003chtml xmlns:fo=\"http://www.w3.org/1999/XSL/Format\" xmlns:msxsl=\"urn:schemas-microsoft-com:xslt\"\u003e\n\u003chead\u003e\n\u003cMETA http-equiv=\"Content-Type\" content=\"text/html\"\u003e\n\u003cmeta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\"\u003e\n\u003c/head\u003e\n\u003cbody style=\"margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;\"\u003e\n\u003ctable style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px\"\u003e\n\u003ctr style=\"text-align:center;font-weight:bold;background:#9CBCE2\"\u003e\n\u003ctd\u003e1.73159470508083E-03\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e\n\u003ctable style=\"font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px\"\u003e\u003c/table\u003e\n\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/table\u003e\n\u003c/body\u003e\u003cscript type=\"text/javascript\"\u003e\nfunction changeImage(attElement, nameElement) {\ndocument.getElementById('imageAttachment').src = attElement;\ndocument.getElementById('imageName').innerHTML = nameElement;}\n\u003c/script\u003e\u003c/html\u003e\n",
+        "Shape_Length": 0.0017315947050808313,
+        "Shape_Area": 1.0249699999246748e-7
+      }
+    }
+  ]
+}

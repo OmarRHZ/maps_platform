@@ -1,0 +1,51 @@
+{
+  "CR-001": {
+    "Name": "CR-001",
+    "Description": "This is a test CR1",
+    "lat": 8.616400142938058,
+    "lng": -83.4686618824633,
+    "zoom": 18
+  },
+  "CR-002": {
+    "Name": "CR-002",
+    "Description": "This land belongs to an ecolodge. It is a mixture of degraded land with crops where we have planted trees to enrich the area and also build a richer forest.",
+    "lat": 8.622217615,
+    "lng": -83.475910215,
+    "zoom": 19
+  },
+  "CR-004": {
+    "Name": "CR-004",
+    "Description": "This is government land, covered with and old grey teak plantation or melina (gmelina arborea). We are planting trees to help recover the land, it is managed with the local community of Rancho Quemado",
+    "lat": 8.678973095,
+    "lng": -83.573310465,
+    "zoom": 19
+  },
+  "CR-005": {
+    "Name": "CR-005",
+    "Description": "This is an area where a old grey teak or Melina (Gmelina arborea) plantation was established and where the owner of the land cutted the melina and it is now regrowing a natural forest for conservation. It was also logged to establish a cattle ranch in the 70's so its biodiversityt is low and trees are planted around the secondary young forest to enrich the area.",
+    "lat": 8.439203415,
+    "lng": -83.28111845000001,
+    "zoom": 19
+  },
+  "CR-006": {
+    "Name": "CR-006",
+    "Description": "This is a test CR6",
+    "lat": 8.698791145000001,
+    "lng": -83.51053506,
+    "zoom": 19
+  },
+  "CR-007": {
+    "Name": "CR-007",
+    "Description": "This is an integral farm, that has been recently bought by a Costa Rican local farmer, that has all his life worked with cattle and crops. Now, he wants to start sharing his lifestyle by introducing rural tourism and understanding the importance of wildlife conservation. The farm has old Grey Teak plantations he has been cutting to use the wood and now wants to restore the cut land to grow natural forest.",
+    "lat": 8.71162307,
+    "lng": -83.565953065,
+    "zoom": 17
+  },
+  "CR-008": {
+    "Name": "CR-008",
+    "Description": "This terrain was completely a cattle pasture with some remaining trees of endemic trees and fruit. This property has been restored to an edible forest, with 40% of its surface to be converted into a secondary natural forest, and other parts to an agrofestal system.",
+    "lat": 8.564713645,
+    "lng": -83.43366829,
+    "zoom": 19
+  }
+}
