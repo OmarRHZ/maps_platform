@@ -4,6 +4,7 @@ const LandingPage = () => {
   return (
     <div>
         <Header className="header-landing"></Header>
+        <h1>Welcome to Maps Platform</h1>
     </div>
   );
 };
