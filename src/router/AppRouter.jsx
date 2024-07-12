@@ -7,11 +7,11 @@ import LandingPage from "../pages/landing-page";
 const AppRouter = () => {
   return (
     <Routes>
-      <Route path="/" element={<LandingPage />} />
-      <Route path="/report" element={<MainPage />} />
-      <Route path="/map-leaflet" element={<MapLeaflet />} />
-      <Route path="/map-google-old" element={<MapGoogle />} />
-      <Route path="/map-google" element={<GoogleMapComponent />} />
+      <Route path="/maps_platform/" element={<LandingPage />} />
+      <Route path="/maps_platform/report" element={<MainPage />} />
+      <Route path="/maps_platform/map-leaflet" element={<MapLeaflet />} />
+      <Route path="/maps_platform/map-google-old" element={<MapGoogle />} />
+      <Route path="/maps_platform/map-google" element={<GoogleMapComponent />} />
     </Routes>
   );
 };
