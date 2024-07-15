@@ -1,10 +1,11 @@
+const ip = import.meta.env.VITE_OWN_SERVER;
 const TestIframe = () => {
 return (
     <div>
         <div>
             <iframe
                 title="test-iframe"
-                src="http://localhost:5173/maps_platform/#/maps_platform/map-google/CR-001?iframe=true"
+                src={`${ip}/maps_platform/#/maps_platform/map-google/CR-001?iframe=true`}
                 width="450"
                 height="240"
                 style={{ border: 0 }}
@@ -13,27 +14,7 @@ return (
             ></iframe>
             <iframe
                 title="test-iframe"
-                src="http://localhost:5173/maps_platform/#/maps_platform/map-google/CR-002?iframe=true"
-                width="450"
-                height="240"
-                style={{ border: 0 }}
-                allowfullscreen=""
-                loading="lazy"
-            ></iframe>
-        </div>
-        <div>
-            <iframe
-                title="test-iframe"
-                src="http://localhost:5173/maps_platform/#/maps_platform/map-google/CR-004?iframe=true"
-                width="450"
-                height="240"
-                style={{ border: 0 }}
-                allowfullscreen=""
-                loading="lazy"
-            ></iframe>
-            <iframe
-                title="test-iframe"
-                src="http://localhost:5173/maps_platform/#/maps_platform/map-google/CR-005?iframe=true"
+                src={`${ip}/maps_platform/#/maps_platform/map-google/CR-002?iframe=true`}
                 width="450"
                 height="240"
                 style={{ border: 0 }}
@@ -44,7 +25,7 @@ return (
         <div>
             <iframe
                 title="test-iframe"
-                src="http://localhost:5173/maps_platform/#/maps_platform/map-google/CR-006?iframe=true"
+                src={`${ip}/maps_platform/#/maps_platform/map-google/CR-004?iframe=true`}
                 width="450"
                 height="240"
                 style={{ border: 0 }}
@@ -53,7 +34,7 @@ return (
             ></iframe>
             <iframe
                 title="test-iframe"
-                src="http://localhost:5173/maps_platform/#/maps_platform/map-google/CR-007?iframe=true"
+                src={`${ip}/maps_platform/#/maps_platform/map-google/CR-005?iframe=true`}
                 width="450"
                 height="240"
                 style={{ border: 0 }}
@@ -64,7 +45,27 @@ return (
         <div>
             <iframe
                 title="test-iframe"
-                src="http://localhost:5173/maps_platform/#/maps_platform/map-google/CR-008?iframe=true"
+                src={`${ip}/maps_platform/#/maps_platform/map-google/CR-006?iframe=true`}
+                width="450"
+                height="240"
+                style={{ border: 0 }}
+                allowfullscreen=""
+                loading="lazy"
+            ></iframe>
+            <iframe
+                title="test-iframe"
+                src={`${ip}/maps_platform/#/maps_platform/map-google/CR-007?iframe=true`}
+                width="450"
+                height="240"
+                style={{ border: 0 }}
+                allowfullscreen=""
+                loading="lazy"
+            ></iframe>
+        </div>
+        <div>
+            <iframe
+                title="test-iframe"
+                src={`${ip}/maps_platform/#/maps_platform/map-google/CR-008?iframe=true`}
                 width="450"
                 height="240"
                 style={{ border: 0 }}

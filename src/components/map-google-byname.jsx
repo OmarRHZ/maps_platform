@@ -11,7 +11,8 @@ import { useParams, useSearchParams } from "react-router-dom";
 //traer APIkey de un archivo .env
 
 const GoogleMapComponentByName = (props) => {
-  const ip = import.meta.env.VITE_IP_LOCAL;
+  const env = import.meta.env.VITE_ENV;
+  const ip = env === "dev" ? import.meta.env.VITE_IP_LOCAL : import.meta.env.VITE_IP_SERVER;
   const params = useParams();
   const [searchParams] = useSearchParams();
   const [nameLandplot, setNameLandplot] = useState([]);

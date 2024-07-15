@@ -10,7 +10,8 @@ import * as turf from "@turf/turf";
 //traer APIkey de un archivo .env
 
 const GoogleMapComponent = (props) => {
-  const ip=import.meta.env.VITE_IP_LOCAL;
+  const env = import.meta.env.VITE_ENV;
+  const ip = env === "dev" ? import.meta.env.VITE_IP_LOCAL : import.meta.env.VITE_IP_SERVER;
   const [markers, setMarkers] = useState([]);
   const { isLoaded } = useJsApiLoader({
     id: "google-map-script",
