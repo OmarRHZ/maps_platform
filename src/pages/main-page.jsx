@@ -43,6 +43,16 @@ const items = [
     icon: <UserOutlined />,
   },
   {
+    Name: "CR-003",
+    label: "CR-003",
+    value: "CR-003",
+    Description: "This is a test CR3",
+    lat: 8.622217615,
+    lng: -83.475910215,
+    zoom: 19,
+    icon: <UserOutlined />,
+  },
+  {
     Name: "CR-004",
     label: "CR-004",
     value: "CR-004",

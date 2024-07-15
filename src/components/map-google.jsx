@@ -10,6 +10,7 @@ import * as turf from "@turf/turf";
 //traer APIkey de un archivo .env
 
 const GoogleMapComponent = (props) => {
+  const ip=import.meta.env.VITE_IP_LOCAL;
   const [markers, setMarkers] = useState([]);
   const { isLoaded } = useJsApiLoader({
     id: "google-map-script",
@@ -40,7 +41,7 @@ const GoogleMapComponent = (props) => {
   };
 
   const coordinates1 = data[0].features[0].geometry.coordinates;
-  console.log(coordinates1);
+
   const formattedCoords1 = coordinates1[0].map((coord) => ({
     lat: coord[1],
     lng: coord[0],
@@ -57,32 +58,58 @@ const GoogleMapComponent = (props) => {
 
   const polygonGeoJSON2 = turf.polygon(coordinates2);
 
+  const coordinates3_A = data[2].features[0].geometry.coordinates;
 
-  const coordinates4 = data[2].features[0].geometry.coordinates;
+  const formattedCoords3_A = coordinates3_A[0].map((coord) => ({
+    lat: coord[1],
+    lng: coord[0],
+  }));
+
+  const polygonGeoJSON3_A = turf.polygon(coordinates3_A);
+
+  const coordinates3_B = data[2].features[1].geometry.coordinates;
+
+  const formattedCoords3_B = coordinates3_B[0].map((coord) => ({
+    lat: coord[1],
+    lng: coord[0],
+  }));
+
+  //const polygonGeoJSON3_B = turf.polygon(coordinates3_B);
+
+  const coordinates3_C = data[2].features[2].geometry.coordinates;
+
+  const formattedCoords3_C = coordinates3_C[0].map((coord) => ({
+    lat: coord[1],
+    lng: coord[0],
+  }));
+
+  //const polygonGeoJSON3_C = turf.polygon(coordinates3_C);
+
+  const coordinates4 = data[3].features[0].geometry.coordinates;
 
   const formattedCoords4 = coordinates4[0].map((coord) => ({
     lat: coord[1],
     lng: coord[0],
   }));
   const polygonGeoJSON4 = turf.polygon(coordinates4);
-  
-  const coordinates5 = data[3].features[0].geometry.coordinates;
+
+  const coordinates5 = data[4].features[0].geometry.coordinates;
 
   const formattedCoords5 = coordinates5[0].map((coord) => ({
     lat: coord[1],
     lng: coord[0],
   }));
   const polygonGeoJSON5 = turf.polygon(coordinates5);
-  
-  const coordinates6 = data[4].features[0].geometry.coordinates;
+
+  const coordinates6 = data[5].features[0].geometry.coordinates;
 
   const formattedCoords6 = coordinates6[0].map((coord) => ({
     lat: coord[1],
     lng: coord[0],
   }));
   const polygonGeoJSON6 = turf.polygon(coordinates6);
-  
-  const coordinates7 = data[5].features[0].geometry.coordinates;
+
+  const coordinates7 = data[6].features[0].geometry.coordinates;
 
   const formattedCoords7 = coordinates7[0].map((coord) => ({
     lat: coord[1],
@@ -90,83 +117,99 @@ const GoogleMapComponent = (props) => {
   }));
   const polygonGeoJSON7 = turf.polygon(coordinates7);
 
-  const coordinates8 = data[6].features[0].geometry.coordinates;
-  
+  const coordinates8 = data[7].features[0].geometry.coordinates;
+
   const formattedCoords8 = coordinates8[0].map((coord) => ({
-      lat: coord[1],
-      lng: coord[0],
-    }));
-    const polygonGeoJSON8 = turf.polygon(coordinates8);
+    lat: coord[1],
+    lng: coord[0],
+  }));
+  const polygonGeoJSON8 = turf.polygon(coordinates8);
 
   useEffect(() => {
     const numPoints = 10; // Número de puntos que deseas generar
-    if (props.geoCode === "CR-001") {//eslint-disable-line
-        const randomPoints = generateRandomPoints(polygonGeoJSON1, numPoints);
-        const newMarkers = randomPoints.map((point) => ({
-            lat: point.geometry.coordinates[1],
-            lng: point.geometry.coordinates[0],
-          }));
-          console.log(numPoints)
-          console.log(props.geoCode);//eslint-disable-line
-          console.log(randomPoints);
-          setMarkers(newMarkers);
-    }else if (props.geoCode === "CR-002") {//eslint-disable-line
-        const randomPoints = generateRandomPoints(polygonGeoJSON2, numPoints);
-        const newMarkers = randomPoints.map((point) => ({
-            lat: point.geometry.coordinates[1],
-            lng: point.geometry.coordinates[0],
-          }));
-          console.log(props.geoCode);//eslint-disable-line
-          console.log(newMarkers);
-          setMarkers(newMarkers);
-    }else if (props.geoCode === "CR-004") {//eslint-disable-line
-        const randomPoints = generateRandomPoints(polygonGeoJSON4, numPoints);
-        const newMarkers = randomPoints.map((point) => ({
-            lat: point.geometry.coordinates[1],
-            lng: point.geometry.coordinates[0],
-          }));
-          console.log(props.geoCode);//eslint-disable-line
-          console.log(newMarkers);
-          setMarkers(newMarkers);
-    }else if (props.geoCode === "CR-005") {//eslint-disable-line
-        const randomPoints = generateRandomPoints(polygonGeoJSON5, numPoints);
-        const newMarkers = randomPoints.map((point) => ({
-            lat: point.geometry.coordinates[1],
-            lng: point.geometry.coordinates[0],
-          }));
-          console.log(props.geoCode);//eslint-disable-line
-          console.log(newMarkers);
-          setMarkers(newMarkers);
-    }else if (props.geoCode === "CR-006") {//eslint-disable-line
-        const randomPoints = generateRandomPoints(polygonGeoJSON6, numPoints);
-        const newMarkers = randomPoints.map((point) => ({
-            lat: point.geometry.coordinates[1],
-            lng: point.geometry.coordinates[0],
-          }));
-          console.log(props.geoCode);//eslint-disable-line
-          console.log(newMarkers);
-          setMarkers(newMarkers);
-    }else if (props.geoCode === "CR-007") {//eslint-disable-line
-        const randomPoints = generateRandomPoints(polygonGeoJSON7, numPoints);
-        const newMarkers = randomPoints.map((point) => ({
-            lat: point.geometry.coordinates[1],
-            lng: point.geometry.coordinates[0],
-          }));
-          console.log(props.geoCode);//eslint-disable-line
-          console.log(newMarkers);
-          setMarkers(newMarkers);
-    }else if (props.geoCode === "CR-008") {//eslint-disable-line
-        const randomPoints = generateRandomPoints(polygonGeoJSON8, numPoints);
-        const newMarkers = randomPoints.map((point) => ({
-            lat: point.geometry.coordinates[1],
-            lng: point.geometry.coordinates[0],
-          }));
-          console.log(props.geoCode);//eslint-disable-line
-          console.log(newMarkers);
-          setMarkers(newMarkers);
+    if (props.geoCode === "CR-001") {
+      //eslint-disable-line
+      const randomPoints = generateRandomPoints(polygonGeoJSON1, numPoints);
+      const newMarkers = randomPoints.map((point) => ({
+        lat: point.geometry.coordinates[1],
+        lng: point.geometry.coordinates[0],
+      }));
+      console.log(numPoints);
+      console.log(props.geoCode); //eslint-disable-line
+      console.log(randomPoints);
+      setMarkers(newMarkers);
+    } else if (props.geoCode === "CR-002") {
+      //eslint-disable-line
+      const randomPoints = generateRandomPoints(polygonGeoJSON2, numPoints);
+      const newMarkers = randomPoints.map((point) => ({
+        lat: point.geometry.coordinates[1],
+        lng: point.geometry.coordinates[0],
+      }));
+      console.log(props.geoCode); //eslint-disable-line
+      console.log(newMarkers);
+      setMarkers(newMarkers);
+    } else if (props.geoCode === "CR-003") {
+      //eslint-disable-line
+      const randomPoints = generateRandomPoints(polygonGeoJSON3_A, numPoints);
+      const newMarkers = randomPoints.map((point) => ({
+        lat: point.geometry.coordinates[1],
+        lng: point.geometry.coordinates[0],
+      }));
+      console.log(props.geoCode); //eslint-disable-line
+      console.log(newMarkers);
+      setMarkers(newMarkers);
+    } else if (props.geoCode === "CR-004") {
+      //eslint-disable-line
+      const randomPoints = generateRandomPoints(polygonGeoJSON4, numPoints);
+      const newMarkers = randomPoints.map((point) => ({
+        lat: point.geometry.coordinates[1],
+        lng: point.geometry.coordinates[0],
+      }));
+      console.log(props.geoCode); //eslint-disable-line
+      console.log(newMarkers);
+      setMarkers(newMarkers);
+    } else if (props.geoCode === "CR-005") {
+      //eslint-disable-line
+      const randomPoints = generateRandomPoints(polygonGeoJSON5, numPoints);
+      const newMarkers = randomPoints.map((point) => ({
+        lat: point.geometry.coordinates[1],
+        lng: point.geometry.coordinates[0],
+      }));
+      console.log(props.geoCode); //eslint-disable-line
+      console.log(newMarkers);
+      setMarkers(newMarkers);
+    } else if (props.geoCode === "CR-006") {
+      //eslint-disable-line
+      const randomPoints = generateRandomPoints(polygonGeoJSON6, numPoints);
+      const newMarkers = randomPoints.map((point) => ({
+        lat: point.geometry.coordinates[1],
+        lng: point.geometry.coordinates[0],
+      }));
+      console.log(props.geoCode); //eslint-disable-line
+      console.log(newMarkers);
+      setMarkers(newMarkers);
+    } else if (props.geoCode === "CR-007") {
+      //eslint-disable-line
+      const randomPoints = generateRandomPoints(polygonGeoJSON7, numPoints);
+      const newMarkers = randomPoints.map((point) => ({
+        lat: point.geometry.coordinates[1],
+        lng: point.geometry.coordinates[0],
+      }));
+      console.log(props.geoCode); //eslint-disable-line
+      console.log(newMarkers);
+      setMarkers(newMarkers);
+    } else if (props.geoCode === "CR-008") {
+      //eslint-disable-line
+      const randomPoints = generateRandomPoints(polygonGeoJSON8, numPoints);
+      const newMarkers = randomPoints.map((point) => ({
+        lat: point.geometry.coordinates[1],
+        lng: point.geometry.coordinates[0],
+      }));
+      console.log(props.geoCode); //eslint-disable-line
+      console.log(newMarkers);
+      setMarkers(newMarkers);
     }
-    
-  }, [props.geoCode]);//eslint-disable-line
+  }, [props.geoCode]); //eslint-disable-line
 
   const [map, setMap] = React.useState(null); // eslint-disable-line no-unused-vars
 
@@ -178,11 +221,11 @@ const GoogleMapComponent = (props) => {
   //   }, []);
 
   const onLoadPolygon = (polygon) => {
-    // eslint-disable-line no-unused-vars
-    console.log("polygon: ", polygon);
+    //console.log("polygon: ", polygon);
   };
 
-  const onUnmount = React.useCallback(function callback(map) {//eslint-disable-line
+  const onUnmount = React.useCallback(function callback(map) {
+    //eslint-disable-line
     // eslint-disable-line no-unused-vars
     setMap(null);
   }, []);
@@ -200,6 +243,9 @@ const GoogleMapComponent = (props) => {
     >
       <Polygon paths={formattedCoords1} options={options} />
       <Polygon paths={formattedCoords2} options={options} />
+      <Polygon paths={formattedCoords3_A} options={options} />
+      <Polygon paths={formattedCoords3_B} options={options} />
+      <Polygon paths={formattedCoords3_C} options={options} />
       <Polygon paths={formattedCoords4} options={options} />
       <Polygon paths={formattedCoords5} options={options} />
       <Polygon paths={formattedCoords6} options={options} />
@@ -210,10 +256,14 @@ const GoogleMapComponent = (props) => {
         options={options}
       />
       {markers.map((marker, index) => (
-        <Marker key={index} position={marker}  icon={{
+        <Marker
+          key={index}
+          position={marker}
+          icon={{
             url: "Tree.png", // Reemplaza con la URL de tu imagen SVG o PNG
-            scaledSize: new window.google.maps.Size(60, 60) // Ajusta el tamaño del icono
-          }}/>
+            scaledSize: new window.google.maps.Size(60, 60), // Ajusta el tamaño del icono
+          }}
+        />
       ))}
     </GoogleMap>
   ) : (
