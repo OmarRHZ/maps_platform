@@ -150,7 +150,7 @@
 }
 .p-landplot-name{
   display: flex;
-  width: 15%;
+  width:100px;
   font-size: 1.1em;
   font-weight: bold;
   justify-content: center;
@@ -160,8 +160,8 @@
 .p-landplot-info{
   font-size: 1em;
   font-weight: bold;
-  width: 85%;
-  max-width: 85%;
+  width: 80%;
+  max-width: 80%;
   max-height: 75px;
   overflow-y: scroll;
 }

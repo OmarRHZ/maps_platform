@@ -101,12 +101,13 @@ const GoogleMapComponentByName = (props) => {
       <GoogleMap
         mapContainerStyle={{ height: "100vh", width: "100%" }}
         mapTypeId="satellite"
-        zoom={zoom - 2} //eslint-disable-line
+        zoom={ paramLandplot ==="CR-008"?zoom: zoom-2} //eslint-disable-line
         center={centerLandplot}
         options={{
           disableDefaultUI: true,
           mapTypeId: "satellite",
           disableDoubleClickZoom: paramIframe === "true" ? true : false,
+          gestureHandling: paramIframe === 'true'? 'none': 'auto',
         }}
       >
         <Polygon paths={formattedCoords} options={options} />
