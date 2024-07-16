@@ -1,4 +1,4 @@
-const ip = import.meta.env.VITE_OWN_SERVER;
+const ip = import.meta.env.VITE_OWN_SERVER_GIT;
 const TestIframe = () => {
 return (
     <div>
