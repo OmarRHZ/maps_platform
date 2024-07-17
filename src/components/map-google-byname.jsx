@@ -75,46 +75,71 @@ const GoogleMapComponentByName = (props) => {
       lng: dataLandplot.longitude,
     });
     setZoom(dataLandplot.zoom);
-    const coordinatesLandplot =
-      dataLandplot.geojson.features[0].geometry.coordinates;
+    console.log(dataLandplot.geojson.features.length);
+    const coordinatesLandplot = dataLandplot.geojson.features;
 
-    const formattedCoordsLandplot = coordinatesLandplot[0].map((coord) => ({
-      lat: coord[1],
-      lng: coord[0],
-    }));
+    console.log(coordinatesLandplot);
+
+    const arrayCoordsLandplot = coordinatesLandplot.map(
+      (coord) => coord.geometry.coordinates
+    );
+
+    console.log(arrayCoordsLandplot);
+
+    const arrayFormattedCoordsLandplot = arrayCoordsLandplot.map((coord) => {
+      return coord[0].map((coord) => ({
+        lat: coord[1],
+        lng: coord[0],
+      }));
+    });
+
+    console.log(arrayFormattedCoordsLandplot);
+
+    // const formattedCoordsLandplot = coordinatesLandplot[0].map((coord) => ({
+    //   lat: coord[1],
+    //   lng: coord[0],
+    // }));
 
     //const polygonGeoJSONLandplot = turf.polygon(coordinatesLandplot);
-    console.log(formattedCoordsLandplot);
-    setFormattedCoords(formattedCoordsLandplot);
+    // console.log(formattedCoordsLandplot);
+    setFormattedCoords(arrayFormattedCoordsLandplot);
+    arrayFormattedCoordsLandplot?.map(
+      (coord, index) => (console.log(coord), console.log(index))
+    );
     return dataLandplot;
   };
 
   useEffect(() => {
     if (paramLandplot !== undefined) {
+      console.log(paramLandplot);
       loadLandplotData();
     }
   }, [paramLandplot]);
 
-
   return isLoaded ? (
     <div style={{ display: "flex" }}>
+      {/* {
+        formattedCoords.map((coord, index) => (
+          coord
+        ))
+      } */}
       <GoogleMap
         mapContainerStyle={{ height: "100vh", width: "100%" }}
         mapTypeId="satellite"
-        zoom={ paramLandplot ==="CR-008"?zoom: zoom-2} //eslint-disable-line
+        zoom={paramLandplot === "CR-008" ? zoom : zoom - 2} //eslint-disable-line
         center={centerLandplot}
         options={{
           disableDefaultUI: true,
           mapTypeId: "satellite",
           disableDoubleClickZoom: paramIframe === "true" ? true : false,
-          gestureHandling: paramIframe === 'true'? 'none': 'auto',
+          gestureHandling: paramIframe === "true" ? "none" : "auto",
         }}
       >
-        <Polygon paths={formattedCoords} options={options} />
+        {formattedCoords.map((coord, index) => (
+          <Polygon key={index} path={coord} options={options} />
+        ))}
       </GoogleMap>
-      <div
-        className={`landplot-info`}
-      >
+      <div className={`landplot-info`}>
         <p className="p-landplot-name">{nameLandplot}</p>
         <p className="p-landplot-info">{description}</p>
       </div>
